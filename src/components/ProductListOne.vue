@@ -12,6 +12,9 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
+import { mapGetters } from "vuex";
+
 export default {
   computed: {
     // C READ U D
@@ -21,13 +24,12 @@ export default {
     saleProducts() {
       return this.$store.getters.saleProducts;
     },
+    ...mapGetters(["saleProducts"]),
   },
   methods: {
     // C R UPDATE D
     // 1) to call a vuex action, we use a dispatch
-    reducePrice: function (amount) {
-      this.$store.dispatch("reducePrice", amount);
-    },
+    ...mapActions(["reducePrice"]),
   },
 };
 </script>
