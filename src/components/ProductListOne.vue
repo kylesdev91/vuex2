@@ -13,6 +13,7 @@
 <script>
 export default {
   computed: {
+    // C READ U D
     products() {
       return this.$store.state.products;
     },
