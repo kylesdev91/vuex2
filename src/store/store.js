@@ -24,6 +24,7 @@ export const store = new Vuex.Store({
     },
   },
   mutations: {
+    // 3) mutation is the last step that started with dispatch
     reducePrice: (state, payload) => {
       state.products.forEach((product) => {
         product.price -= payload;
@@ -31,6 +32,7 @@ export const store = new Vuex.Store({
     },
   },
   actions: {
+    // 2) dispatch calls action to commit a mutation
     reducePrice: (context, payload) => {
       setTimeout(function () {
         context.commit("reducePrice", payload);

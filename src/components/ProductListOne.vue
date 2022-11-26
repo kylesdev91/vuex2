@@ -23,6 +23,8 @@ export default {
     },
   },
   methods: {
+    // C R UPDATE D
+    // 1) to call a vuex action, we use a dispatch
     reducePrice: function (amount) {
       this.$store.dispatch("reducePrice", amount);
     },
