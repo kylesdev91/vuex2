@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div id="product-list-one">
     <h2>Product List One</h2>
     <ul>
@@ -56,4 +56,4 @@ export default {
   font-weight: bold;
   color: #e8800c;
 }
-</style>
+</style> -->
