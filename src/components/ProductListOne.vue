@@ -28,7 +28,8 @@ export default {
   },
   methods: {
     // C R UPDATE D
-    // 1) to call a vuex action, we use a dispatch
+    // 1) to call a vuex action, we use a dispatch or map actions
+    // this.$store.action.dispatch("reducePrice", amount)
     ...mapActions(["reducePrice"]),
   },
 };
