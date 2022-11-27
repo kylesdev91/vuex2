@@ -28,7 +28,8 @@ export const store = new Vuex.Store({
     // 3) mutation is the last step that started with dispatch
     NEW_PRODUCT(state, productItem) {
       state.products.push({
-        name: productItem,
+        name: productItem.name,
+        price: productItem.price,
       });
     },
     DELETE_PRODUCT(state, productItem) {
